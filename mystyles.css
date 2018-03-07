@@ -1,0 +1,278 @@
+/* index css */
+
+.site {
+  position: absolute;
+  hieght: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  mergin-left: atuo;
+  margin-right: auto;
+  overflow: hidden;
+  min-width: 900px;
+  font-family: verdana, geneva, sans-serif;
+  font-size: 9.3px;
+  font-wight: 100;
+  text-align: center;
+  background: none;
+}
+.whitebg {
+  display: block;
+  position: relative;
+  background: white;
+  z-index: 3;
+}
+.logo {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  width: 150px;
+  margin-top: 50px;
+  z-index: 5;
+}
+.navbar {
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  margin-top: 20px;
+  z-index: 0;
+}
+.news {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+}
+.leftnews {
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  margin-right: 240px;
+  text-align: right;
+}
+.footer {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  width: 700px;
+  margin-top: 50px;
+}
+
+/* music css */
+
+.navbarmusic {
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  margin-top: 100px;
+  z-index: 0;
+}
+.soundcloud {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  margin-top: 50px;
+  z-index: 0;
+}
+
+/* shop css */
+
+.navbarshop {
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  margin-top: 100px;
+  z-index: 0;
+}
+p {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  margin-top: 60px;
+  z-index: 0;
+}
+
+/* music css */
+
+.navbarcontact {
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  margin-top: 100px;
+  z-index: 0;
+}
+
+/* links */
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+/* index keyframes */
+
+@keyframes logoSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes navSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes newsFadeIn {
+  0% {
+    opacity: 0;
+}
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes footerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* music keyframes */
+
+@keyframes navmusicFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes soundcloudFadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* shop keyframes */
+
+@keyframes navshopFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* contact keyframes */
+
+@keyframes contactFadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* index animations */
+
+#logo {
+  animation-name: logoSlideLeft;
+  animation-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.73, 0.95, 1);
+}
+#nav {
+  animation-name: navSlideDown;
+  animation-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.78, 0.03, 0.76, 0.77);
+}
+#news {
+  animation-name: newsFadeIn;
+  animation-duration: 3s;
+}
+#footer {
+  animation-name: footerFadeIn;
+  animation-duration: 3.5s;
+}
+
+/* music animations */
+
+#navmusic {
+  animation-name: navmusicFadeIn;
+  animation-duration: 1s;
+}
+#soundcloud {
+  animation-name: soundcloudFadeIn;
+  animation-duration: 2.5s;
+}
+
+/* shop animations */
+
+#navshop {
+  animation-name: navmusicFadeIn;
+  animation-duration: 1s;
+}
+
+/* contact animations */
+
+#contact {
+  animation-name: contactFadeIn;
+  animation-duration: 3s;
+}
